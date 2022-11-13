@@ -7,11 +7,12 @@ url = 'https://scikit-learn.org/stable/modules/sgd.html'
 context = get_html(url)
 
 # Load model and tokenizer
-model = AutoModelForQuestionAnswering.from_pretrained("deepset/roberta-base-squad2")
+
+model = AutoModelForQuestionAnswering.from_pretrained("deepset/tinyroberta-squad2")
 
 question = str(input('What is your question: '))
 
-tokenizer = AutoTokenizer.from_pretrained("deepset/roberta-base-squad2")
+tokenizer = AutoTokenizer.from_pretrained("deepset/tinyroberta-squad2")
 tokenizer.encode(question, truncation=True, padding=True)
 
 # Creating a pipeline for QA
