@@ -10,6 +10,9 @@ def getAnswer(question):
 
     model = AutoModelForQuestionAnswering.from_pretrained("deepset/tinyroberta-squad2")
 
+    
+    print(question, type(question))
+
     tokenizer = AutoTokenizer.from_pretrained("deepset/tinyroberta-squad2")
     tokenizer.encode(question, truncation=True, padding=True)
 

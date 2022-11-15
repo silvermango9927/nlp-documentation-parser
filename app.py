@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    question = request.form.get('question')
-    # answer = getAnswer(question)
-    return render_template('index.html')
+        question = request.args.get('question')
+        answer = getAnswer(question)
+        return render_template('index.html', answer=answer['answer'])
 
 if __name__ == '__main__':
     app.run(debug=True)
