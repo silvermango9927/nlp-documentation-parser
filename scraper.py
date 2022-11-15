@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 
 # Scraping HTML from a single Sklearn docs page
-def get_html(url):
+def get_html():
     text = ''
     urls = []
     with open('urls.txt', 'r') as f:

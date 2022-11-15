@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital@0;1&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+  padding: 1em;
+}
+main {
+  font-family: "Exo", sans-serif;
+}
+.orange {
+  color: salmon;
+}
+.blue {
+  color: rgb(0, 55, 103);
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  border: none;
+  width: 50em;
+  padding: 0.8rem;
+  font-family: "Exo", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, salmon, rgb(0, 55, 103));
+}
